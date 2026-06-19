@@ -1,0 +1,12 @@
+#kustomization.yaml
+resources:
+- ../../base
+patches:
+- path: patch-deployment.yml
+  target:
+      kind: Deployment
+      name: clinic-deploy
+- path: patch-service.yml
+  target:
+    kind: Service
+    name: clinic-service
