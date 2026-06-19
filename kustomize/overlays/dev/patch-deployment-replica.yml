@@ -1,0 +1,14 @@
+#kind: Deployment
+#metadata:
+#  name: clinic-deploy
+#  labels:
+#    myversion: "1"
+#spec:
+#  replicas: 3
+
+
+# JSON Patch RFC 6902 : opération "replace"
+# Accède directement au chemin /spec/replicas et le remplace par 3
+- op: replace
+  path: /spec/replicas
+  value: 3
