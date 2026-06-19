@@ -22,4 +22,4 @@ patches:
       
   # Type 2 : Strategic Merge Patch (patch-routing.yaml) - YAML classique, fusionne avec original
   # Patch de deployment et ingress dans le meme fichier
-  - path: patch-routing.yaml
+  - path: patch-routing.yml
